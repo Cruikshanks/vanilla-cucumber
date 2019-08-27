@@ -22,13 +22,12 @@ gem "rspec-expectations", "~> 3.8"
 # is they run slower and isn't best suited to a CI environment.
 gem "selenium-webdriver", "~> 3.14"
 
-# Needed when wishing to use Chrome for selenium tests. We could have chosen
-# to install the chromedriver separately (and it seems more recent tutorials
-# do it in that way). However in an effort to make using this gem as simple
-# as possible we have gone with using the chromedriver-helper. To quote
-# from it "Easy installation and use of chromedriver, the Chromium project's
-# selenium webdriver adapter."
-gem "chromedriver-helper", "~> 2.1"
+# Needed to use Chrome or Firefox for selenium tests. You can opt
+# to install each driver separately. However in an effort to make using this
+# gem as simple as possible we have gone with using webdrivers. To quote
+# from it "Run Selenium tests more easily with automatic installation and
+# updates for all supported webdrivers."
+gem "webdrivers", "~> 4.0"
 
 # Rake gives us the ability to create our own commands or 'tasks' for working
 # with quke. We have it setup to start the demo app and to clear the /tmp for

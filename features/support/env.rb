@@ -3,7 +3,7 @@
 require "capybara"
 require "capybara/cucumber"
 require "selenium-webdriver"
-require "chromedriver-helper"
+require "webdrivers"
 
 Capybara.app_host = "localhost:4567"
 
